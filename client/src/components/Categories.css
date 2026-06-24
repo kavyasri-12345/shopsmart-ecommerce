@@ -1,0 +1,14 @@
+.categories {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.categories button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: white;
+}

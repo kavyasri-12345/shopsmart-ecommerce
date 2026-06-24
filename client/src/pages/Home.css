@@ -1,0 +1,483 @@
+/* GLOBAL */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+
+  padding: 40px 20px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.hero-content button {
+  padding: 15px 35px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: white;
+  color: #2563eb;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  transform: translateY(-3px);
+}
+
+/* SEARCH */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding: 35px 20px;
+}
+
+.search-container input {
+  width: 700px;
+  max-width: 95%;
+
+  padding: 15px 20px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+}
+
+/* CATEGORIES */
+
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 25px;
+}
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 20px;
+}
+
+.category-card {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+
+  transition: .3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRODUCTS */
+
+.products-section {
+  padding: 40px 20px;
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.products-grid {
+  width: 95%;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fill,
+    minmax(250px, 1fr));
+
+  gap: 20px;
+}
+
+/* WHY US */
+
+.why-us {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-us h2 {
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,
+    minmax(250px,1fr));
+
+  gap: 20px;
+}
+
+.why-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+}
+
+/* DEALS */
+
+.deals {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.deals h2 {
+  margin-bottom: 30px;
+}
+
+.deal-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,
+    minmax(250px,1fr));
+
+  gap: 20px;
+}
+
+.deal-card {
+  padding: 30px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+    );
+
+  color: white;
+}
+
+.deal-card h3 {
+  font-size: 24px;
+}
+
+/* BRANDS */
+
+.brands {
+  background: white;
+
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.brands h2 {
+  margin-bottom: 30px;
+}
+
+.brand-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit,
+    minmax(150px,1fr));
+
+  gap: 20px;
+}
+
+.brand-card {
+  background: #f8fafc;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.05);
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  text-align: center;
+
+  padding: 60px 20px;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  width: 350px;
+  max-width: 90%;
+
+  padding: 14px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+}
+
+.newsletter button {
+  margin-left: 10px;
+
+  padding: 14px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #111827;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 35px 20px;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+/* TABLET */
+
+@media (max-width: 992px) {
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .products-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .category-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .deal-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .brand-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 400px;
+    padding: 30px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero-content button {
+    width: 180px;
+  }
+
+  .search-container {
+    padding: 20px 15px;
+  }
+
+  .search-container input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .categories,
+  .products-section,
+  .why-us,
+  .deals,
+  .brands,
+  .newsletter {
+    padding: 40px 15px;
+  }
+
+  .category-grid,
+  .products-grid,
+  .why-grid,
+  .deal-grid,
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-section h2,
+  .why-us h2,
+  .deals h2,
+  .brands h2,
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .category-card,
+  .why-card,
+  .deal-card,
+  .brand-card {
+    padding: 18px;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .newsletter button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .footer {
+    padding: 25px 15px;
+  }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .products-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-card {
+    font-size: 14px;
+  }
+
+  .brand-card {
+    font-size: 14px;
+  }
+
+}
