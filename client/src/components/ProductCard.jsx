@@ -13,7 +13,7 @@ function ProductCard({ product }) {
     );
 
     const { data } = await axios.post(
-      "http://localhost:5000/api/cart",
+      "https://shopsmart-ecommerce-shve.onrender.com/api/cart",
       {
         productId: product._id,
         quantity: 1,
@@ -41,7 +41,7 @@ const addToWishlist = async () => {
     );
 
     await axios.post(
-      "http://localhost:5000/api/wishlist",
+      "https://shopsmart-ecommerce-shve.onrender.com/api/wishlist",
       {
         productId: product._id,
       },

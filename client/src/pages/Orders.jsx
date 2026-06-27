@@ -18,7 +18,7 @@ function Orders() {
       );
 
       const { data } = await axios.get(
-        "http://localhost:5000/api/orders",
+        "https://shopsmart-ecommerce-shve.onrender.com/api/orders",
         {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,

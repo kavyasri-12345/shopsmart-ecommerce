@@ -23,7 +23,7 @@ function Wishlist() {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/wishlist",
+            "https://shopsmart-ecommerce-shve.onrender.com/api/wishlist",
             {
               headers: {
                 Authorization:
@@ -49,7 +49,7 @@ function Wishlist() {
           );
 
         await axios.delete(
-          `http://localhost:5000/api/wishlist/${id}`,
+          `https://shopsmart-ecommerce-shve.onrender.com/api/wishlist/${id}`,
           {
             headers: {
               Authorization:

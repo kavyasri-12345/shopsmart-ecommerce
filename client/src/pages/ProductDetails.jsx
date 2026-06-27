@@ -35,7 +35,7 @@ function ProductDetails() {
 
         const { data } =
           await axios.get(
-            `http://localhost:5000/api/products/${id}`
+            `https://shopsmart-ecommerce-shve.onrender.com/api/products/${id}`
           );
 
         setProduct(data);
@@ -54,7 +54,7 @@ function ProductDetails() {
 
         const { data } =
           await axios.get(
-            `http://localhost:5000/api/reviews/${id}`
+            `https://shopsmart-ecommerce-shve.onrender.com/api/reviews/${id}`
           );
 
         setReviews(data);
@@ -79,7 +79,7 @@ function ProductDetails() {
           );
 
         await axios.post(
-          "http://localhost:5000/api/cart",
+          "https://shopsmart-ecommerce-shve.onrender.com/api/cart",
           {
             productId:
               product._id,
@@ -121,7 +121,7 @@ function ProductDetails() {
           );
 
         await axios.post(
-          "http://localhost:5000/api/wishlist",
+          "https://shopsmart-ecommerce-shve.onrender.com/api/wishlist",
           {
             productId:
               product._id,
@@ -162,7 +162,7 @@ function ProductDetails() {
           );
 
         await axios.post(
-          "http://localhost:5000/api/reviews",
+          "https://shopsmart-ecommerce-shve.onrender.com/api/reviews",
           {
             user:
               userInfo._id,

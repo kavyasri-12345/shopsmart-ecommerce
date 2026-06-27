@@ -24,7 +24,7 @@ function Cart() {
 
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/cart",
+          "https://shopsmart-ecommerce-shve.onrender.com",
           {
             headers: {
               Authorization:
@@ -55,7 +55,7 @@ function Cart() {
         );
 
       await axios.delete(
-        `http://localhost:5000/api/cart/${id}`,
+        `https://shopsmart-ecommerce-shve.onrender.com/${id}`,
         {
           headers: {
             Authorization:
@@ -82,7 +82,7 @@ function Cart() {
         );
 
       await axios.put(
-        `http://localhost:5000/api/cart/${id}`,
+        `https://shopsmart-ecommerce-shve.onrender.com/${id}`,
         {
           quantity,
         },

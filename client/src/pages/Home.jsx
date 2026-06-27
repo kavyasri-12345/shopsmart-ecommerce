@@ -29,7 +29,7 @@ const fetchProducts = async () => {
 
     const { data } =
       await axios.get(
-        "http://localhost:5000/api/products"
+        "http://localhost:5173//api/products"
       );
 
     setProducts(data);

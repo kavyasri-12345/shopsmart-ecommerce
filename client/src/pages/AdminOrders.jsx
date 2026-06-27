@@ -26,7 +26,7 @@ function AdminOrders() {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/admin/orders",
+            "https://shopsmart-ecommerce-shve.onrender.com/api/admin/orders",
             {
               headers: {
                 Authorization:
@@ -56,7 +56,7 @@ const updateStatus =
         );
 
       await axios.put(
-        `http://localhost:5000/api/orders/${id}/status`,
+        `https://shopsmart-ecommerce-shve.onrender.com/api/orders/${id}/status`,
         {
           status: "Delivered",
         },

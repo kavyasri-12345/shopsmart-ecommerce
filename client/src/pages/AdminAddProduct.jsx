@@ -23,7 +23,7 @@ function AdminAddProduct() {
         );
 
       await axios.post(
-        "http://localhost:5000/api/products",
+        "https://shopsmart-ecommerce-shve.onrender.com/api/products",
         {
           title,
           price,

@@ -41,7 +41,7 @@ function Navbar() {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/cart",
+            "https://shopsmart-ecommerce-shve.onrender.com/api/cart",
             {
               headers: {
                 Authorization:
@@ -87,7 +87,7 @@ function Navbar() {
 
         const { data } =
           await axios.get(
-            "http://localhost:5000/api/wishlist",
+            "https://shopsmart-ecommerce-shve.onrender.com/api/wishlist",
             {
               headers: {
                 Authorization:

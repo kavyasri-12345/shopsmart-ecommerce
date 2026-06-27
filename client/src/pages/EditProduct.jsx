@@ -28,7 +28,7 @@ function EditProduct() {
     try {
       const { data } =
         await axios.get(
-          `http://localhost:5000/api/products/${id}`
+          `https://shopsmart-ecommerce-shve.onrender.com/api/products/${id}`
         );
 
       setTitle(data.title);
@@ -60,7 +60,7 @@ function EditProduct() {
     try {
       const { data } =
         await axios.post(
-          "http://localhost:5000/api/products/upload",
+          "https://shopsmart-ecommerce-shve.onrender.com/api/products/upload",
           formData
         );
 
@@ -86,7 +86,7 @@ function EditProduct() {
         );
 
       await axios.put(
-        `http://localhost:5000/api/products/${id}`,
+        `https://shopsmart-ecommerce-shve.onrender.com/api/products/${id}`,
         {
           title,
           description,

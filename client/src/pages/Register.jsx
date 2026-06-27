@@ -20,7 +20,7 @@ function Register() {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://shopsmart-ecommerce-shve.onrender.com/api/auth/register",
         {
           name,
           email,

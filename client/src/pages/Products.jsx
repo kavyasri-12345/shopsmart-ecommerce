@@ -12,7 +12,7 @@ function Products() {
   const fetchProducts = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/products"
+        "https://shopsmart-ecommerce-shve.onrender.com/api/products"
       );
 
       setProducts(data);
@@ -28,7 +28,7 @@ function Products() {
       );
 
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`,
+        `https://shopsmart-ecommerce-shve.onrender.com/api/products/${id}`,
         {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,

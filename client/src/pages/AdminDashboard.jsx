@@ -30,7 +30,7 @@ function AdminDashboard() {
     try {
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/products"
+          "https://shopsmart-ecommerce-shve.onrender.com/api/products"
         );
 
       setProducts(data);
@@ -54,7 +54,7 @@ function AdminDashboard() {
 
       const { data } =
         await axios.get(
-          "http://localhost:5000/api/admin/stats",
+          "https://shopsmart-ecommerce-shve.onrender.com/api/admin/stats",
           {
             headers: {
               Authorization:
@@ -89,7 +89,7 @@ function AdminDashboard() {
           );
 
         await axios.delete(
-          `http://localhost:5000/api/products/${id}`,
+          `https://shopsmart-ecommerce-shve.onrender.com/api/products/${id}`,
           {
             headers: {
               Authorization:
