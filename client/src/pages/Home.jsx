@@ -29,7 +29,7 @@ const fetchProducts = async () => {
 
     const { data } =
       await axios.get(
-        "http://localhost:5173//api/products"
+        "https://shopsmart-ecommerce-shve.onrender.com/api/products"
       );
 
     setProducts(data);
